@@ -11,10 +11,10 @@ class Virus():
         else: self.create_params()
 
     def create_params(self):
-        self.contagiousness = model.cast_param(cfg.VIRUS_CONTAGIOUSNESS, 0.05)
-        self.severity = model.cast_param(cfg.VIRUS_SEVERYTI, 0.05)
-        self.lethaly = model.cast_param(cfg.VIRUS_LETHALY, 0.05)
-        self.mutable = model.cast_param(cfg.VIRUS_MUTABLE, 0.05)
+        self.contagiousness = model.cast_param(cfg.VIRUS_CONTAGIOUSNESS, cfg.VIRUS_PARAMS_RANGE)
+        self.severity = model.cast_param(cfg.VIRUS_SEVERYTI, cfg.VIRUS_PARAMS_RANGE)
+        self.lethaly = model.cast_param(cfg.VIRUS_LETHALY, cfg.VIRUS_PARAMS_RANGE)
+        self.mutable = model.cast_param(cfg.VIRUS_MUTABLE, cfg.VIRUS_PARAMS_RANGE)
         self.mutate_intensity = cfg.VIRUS_MUTATE_INTENSITY
         self.stain = cfg.VIRUS_STAIN
 
@@ -32,10 +32,13 @@ class Virus():
     def mutate(self):
         mpc = 0 # Mutated Params Count
         if model.calc_chanse(self.mutate_intensity/2):
-            self.contagiousness = model.change_param(self.contagiousness, self.contagiousness, 0.2)
+            self.contagiousness = model.change_param(self.contagiousness, self.contagiousness, cfg.VIRUS_CONTAGIOUSNESS_MUTATE_INTESITY)
             mpc += 1
         if model.calc_chanse(self.mutate_intensity):
-            self.severity = model.change_param(self.severity, self.severity, 0.2)
+            self.severity = model.change_param(self.severity, self.severity, cfg.VIRUS_SEVERITY_MUTATE_INTENSITY)
+            mpc += 1
+        if model.calc_chanse(self.mutate_intensity):
+            self.lethaly = model.change_param(self.lethaly, self.lethaly, cfg.VIRUS_LETHALITY_MUTATE_INTENSITY)
             mpc += 1
         self.stain += rnd.choice(string.ascii_letters) + str(mpc) 
             

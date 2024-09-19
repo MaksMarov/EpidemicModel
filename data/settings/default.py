@@ -39,14 +39,22 @@ PAWN_SICK_ACCIDENTALLY = 0.005
 
 # Contagiousness (probability of spreading the virus when a pawn comes into contact with another)
 VIRUS_CONTAGIOUSNESS = 0.7
+# Contagioness mutation intensity
+VIRUS_CONTAGIOUSNESS_MUTATE_INTESITY = 0.2
 # Severity (increases disease progression and affects health deterioration)
 VIRUS_SEVERITY = 0.02
+# Severity mutation intensity
+VIRUS_SEVERITY_MUTATE_INTENSITY = 0.2
 # Lethality (probability that the infection will result in death)
 VIRUS_LETHALITY = 0
+# Lethalyti mutation intensity
+VIRUS_LETHALITY_MUTATE_INTESITY = 0.2
 # Ability of the virus to mutate (probability of mutation)
 VIRUS_MUTABLE = 0.1
 # Mutation intensity (how drastically the virus changes during mutations)
 VIRUS_MUTATE_INTENSITY = 0.1
+# Params range %
+VIRUS_PARAMS_RANGE = 0.05
 # Name of the virus
 VIRUS_NAME = "Curse"
 # Strain of the virus (can be updated as the virus mutates)
