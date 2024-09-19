@@ -1,6 +1,5 @@
 import pygame
 
-# Глобальное объявление групп объектов (для избежания сложного импорта в модулях)
 drawable_group = pygame.sprite.Group()
 borders_group = pygame.sprite.Group()
 vertical_borders_group = pygame.sprite.Group()

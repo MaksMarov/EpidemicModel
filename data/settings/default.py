@@ -1,75 +1,74 @@
+# Main simulation parameters
 
-# Основные параметры симуляции
-
-# Высота игрового окна
+# Height of the game window
 SIM_WINDOW_HEIGHT = 1000
-# Ширина игрового окна
+# Width of the game window
 SIM_WINDOW_WIDTH = 1500
-# Скорость симуляции(FPS)
-SIM_SPEED=30
-# Длина симуляции(в шагах)
-SIM_STEPS=2000
-# Цвет экрана
+# Simulation speed (Frames per second - FPS)
+SIM_SPEED = 30
+# Number of simulation steps (ticks)
+SIM_STEPS = 2000
+# Background color of the simulation screen
 SCREEN_COLOR = "white"
-# Начальное количество пешек
+# Initial number of pawns in the simulation
 SIM_START_PAWN_COUNT = 1000
 
-# Основные параметры границы локации(стен)
+# Main parameters for the location's boundary (walls)
 
-# Отступ границы от края экрана
+# Offset of the boundary from the edge of the screen (distance from the border to the screen's edge)
 BORDER_OFFSET = 2.5
-# Толщина границы
+# Thickness of the boundary (wall thickness)
 BORDER_THICKNESS = 5
-# Цвет границы
+# Color of the boundary
 BORDER_COLOR = "black"
 
-# Основные параметры пешки
+# Main parameters for the pawn
 
-# Размер пешки
+# Size (radius) of the pawn
 PAWN_RADIUS = 2.5
-# Базовый цвет пешки
+# Base color of the pawn (default color when healthy)
 PAWN_BASE_COLOR = "yellow"
-# Скорость пешки
+# Maximum movement speed of the pawn
 PAWN_MAX_SPEED = 5
-# Максимальный начальный иммунитет
+# Maximum initial immunity level of the pawn (randomized at spawn between 0 and this value)
 PAWN_MAX_START_IMMUNITY = 0.1
-# Шанс случайно заболеть
+# Probability of a pawn randomly getting sick without external interaction
 PAWN_SICK_ACCIDENTALLY = 0.005
 
-# Основные параметры вируса(начальный штамм)
+# Main parameters for the virus (initial strain)
 
-# Заразность
+# Contagiousness (probability of spreading the virus when a pawn comes into contact with another)
 VIRUS_CONTAGIOUSNESS = 0.7
-# Тяжесть
-VIRUS_SEVERYTI = 0.02
-# Летальность
-VIRUS_LETHALY = 0
-# Способоность к мутации
+# Severity (increases disease progression and affects health deterioration)
+VIRUS_SEVERITY = 0.02
+# Lethality (probability that the infection will result in death)
+VIRUS_LETHALITY = 0
+# Ability of the virus to mutate (probability of mutation)
 VIRUS_MUTABLE = 0.1
-# Интенсивность мутаций
+# Mutation intensity (how drastically the virus changes during mutations)
 VIRUS_MUTATE_INTENSITY = 0.1
-# Название
+# Name of the virus
 VIRUS_NAME = "Curse"
-# Штамм
-VIRUS_STAIN = ""
+# Strain of the virus (can be updated as the virus mutates)
+VIRUS_STRAIN = ""
 
-# Основные параметры состояний
+# Main parameters for the pawn states
 
-# Здоровый
+# Healthy
 
-# Цвет
+# Color representing the healthy state
 HEALTHY_STATE_COLOR = "green"
 
-# Мертвый
+# Dead
 
-# Цвет
+# Color representing the dead state
 DEAD_STATE_COLOR = "gray"
 
-# Инфицированый
+# Infected
 
-# Цвет
+# Color representing the infected state
 INFECTED_STATE_COLOR = "red"
-# Скорость течения болезни
+# Disease progression speed (determines how quickly the infection worsens)
 INFECTED_STATE_DISEASE_COEF = 0.15
-# Скорость выработки иммунитета
+# Immunity growth speed (determines how quickly the pawn builds immunity while infected)
 INFECTED_STATE_IMMUNITY_COEF = 0.2
