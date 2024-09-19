@@ -1,0 +1,81 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6f6461bc-212a-4320-9ea8-5d93b270c1f2</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>EpidemicMathModel</Name>
+    <RootNamespace>EpidemicMathModel</RootNamespace>
+    <InterpreterId>MSBuild|venv|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="core\configuration.py" />
+    <Compile Include="core\game.py" />
+    <Compile Include="core\borders.py" />
+    <Compile Include="core\graph.py" />
+    <Compile Include="core\groups.py" />
+    <Compile Include="core\model.py" />
+    <Compile Include="core\pawn.py" />
+    <Compile Include="core\pawn_states.py" />
+    <Compile Include="core\virus.py" />
+    <Compile Include="data\settings\default.py" />
+    <Compile Include="data\simulations\sim_statistic.py" />
+    <Compile Include="main.py" />
+    <Compile Include="ref.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="venv\">
+      <Id>venv</Id>
+      <Version>0.0</Version>
+      <Description>venv (Python 3.12)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\project\requirements.txt" />
+    <Content Include="data\simulations\simulation_2024-09-19_23-26-41.png" />
+    <Content Include="data\simulations\simulation_2024-09-19_23-28-11.png" />
+    <Content Include="data\simulations\simulation_2024-09-19_23-30-10.png" />
+    <Content Include="data\simulations\simulation_2024-09-20_00-06-35.png" />
+    <Content Include="data\simulations\simulation_2024-09-20_00-07-00.png" />
+    <Content Include="data\simulations\simulation_2024-09-20_00-07-26.png" />
+    <Content Include="data\simulations\simulation_2024-09-20_00-09-21.png" />
+    <Content Include="data\simulations\simulation_2024-09-20_00-10-28.png" />
+    <Content Include="data\simulations\simulation_2024-09-20_00-11-01.png" />
+    <Content Include="data\simulations\simulation_2024-09-20_00-14-37.png" />
+    <Content Include="data\simulations\__pycache__\sim_statistic.cpython-312.pyc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="core\" />
+    <Folder Include="data\" />
+    <Folder Include="data\settings\" />
+    <Folder Include="data\project\" />
+    <Folder Include="data\simulations\" />
+    <Folder Include="data\simulations\__pycache__\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
