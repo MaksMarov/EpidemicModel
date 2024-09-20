@@ -4,7 +4,7 @@ from datetime import datetime
 
 import core.sim_statistic as stat
 
-def create_stat(save_dir='data/simulations', show_graph = False):
+def create_stat(save_dir='data/simulations'):
     data = stat.data
 
     health = [item[0] for item in data]
@@ -40,6 +40,5 @@ def create_stat(save_dir='data/simulations', show_graph = False):
     filepath = os.path.join(save_dir, filename)
 
     plt.savefig(filepath)
-
-    if show_graph:
-        plt.show()
+    
+    plt.show()

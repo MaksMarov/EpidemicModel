@@ -7,7 +7,7 @@ SIM_WINDOW_WIDTH = 1500
 # Simulation speed (Frames per second - FPS)
 SIM_SPEED = 30
 # Number of simulation steps (ticks)
-SIM_STEPS = 2000
+SIM_STEPS = 1000
 # Background color of the simulation screen
 SCREEN_COLOR = "white"
 # Initial number of pawns in the simulation
@@ -38,7 +38,7 @@ PAWN_SICK_ACCIDENTALLY = 0.005
 # Main parameters for the virus (initial strain)
 
 # Contagiousness (probability of spreading the virus when a pawn comes into contact with another)
-VIRUS_CONTAGIOUSNESS = 0.7
+VIRUS_CONTAGIOUSNESS = 1
 # Contagioness mutation intensity
 VIRUS_CONTAGIOUSNESS_MUTATE_INTESITY = 0.2
 # Severity (increases disease progression and affects health deterioration)
