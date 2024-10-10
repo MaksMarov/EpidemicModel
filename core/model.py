@@ -13,4 +13,3 @@ def change_param(referense, value, persent, min_value = 0, max_value = 1):
 
 def calc_chanse(probability):
     return rnd.random() < probability
-        

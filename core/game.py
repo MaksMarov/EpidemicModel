@@ -1,5 +1,3 @@
-from tokenize import group
-from venv import create
 import pygame
 import random
 
@@ -64,7 +62,7 @@ class Session():
 
     def create_pawns(self):
         for _ in range(cfg.SIM_START_PAWN_COUNT):
-            pawn.Pawn(10)
+            pawn.Pawn(cfg.PAWN_RADIUS)
 
     def prepare_game(self):
         self.create_clock()
