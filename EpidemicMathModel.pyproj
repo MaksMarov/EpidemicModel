@@ -60,6 +60,8 @@
     <Content Include="data\simulations\simulation_2024-09-20_00-11-01.png" />
     <Content Include="data\simulations\simulation_2024-09-20_00-14-37.png" />
     <Content Include="data\simulations\__pycache__\sim_statistic.cpython-312.pyc" />
+    <Content Include="Outdata.txt" />
+    <Content Include="Диздок симуляции.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="core\" />
