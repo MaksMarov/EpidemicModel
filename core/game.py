@@ -67,6 +67,13 @@ class Session():
     def prepare_game(self):
         self.create_clock()
         self.create_pawns()
+
+    def action(self):
+        self.update_object()
+        self.draw_objects()
+        self.tick()
+        self.increment_step()
+        self.catch_statistic()    
         
     def catch_statistic(self):    
         healthy_pawn = 0
@@ -88,11 +95,6 @@ class Session():
         self.prepare_game()
         
         while self.game_is_continues():
-            self.update_object()
-            self.draw_objects()
-            self.tick()
-            self.increment_step()
+            self.action()
             
-            self.catch_statistic()
-
         pygame.quit()

@@ -30,6 +30,7 @@
     <Compile Include="core\model.py" />
     <Compile Include="core\pawn.py" />
     <Compile Include="core\pawn_states.py" />
+    <Compile Include="core\settings.py" />
     <Compile Include="core\virus.py" />
     <Compile Include="data\settings\default.py" />
     <Compile Include="core\sim_statistic.py" />
