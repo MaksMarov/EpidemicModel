@@ -35,7 +35,6 @@
     <Compile Include="data\settings\default.py" />
     <Compile Include="core\sim_statistic.py" />
     <Compile Include="main.py" />
-    <Compile Include="ref.py" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="venv\">
@@ -60,6 +59,31 @@
     <Content Include="data\simulations\simulation_2024-09-20_00-10-28.png" />
     <Content Include="data\simulations\simulation_2024-09-20_00-11-01.png" />
     <Content Include="data\simulations\simulation_2024-09-20_00-14-37.png" />
+    <Content Include="data\simulations\simulation_2024-09-20_00-16-52.png" />
+    <Content Include="data\simulations\simulation_2024-09-20_00-18-23.png" />
+    <Content Include="data\simulations\simulation_2024-09-20_00-21-24.png" />
+    <Content Include="data\simulations\simulation_2024-09-20_00-22-13.png" />
+    <Content Include="data\simulations\simulation_2024-09-20_00-23-58.png" />
+    <Content Include="data\simulations\simulation_2024-09-20_00-26-41.png" />
+    <Content Include="data\simulations\simulation_2024-09-20_00-30-25.png" />
+    <Content Include="data\simulations\simulation_2024-09-20_00-33-48.png" />
+    <Content Include="data\simulations\simulation_2024-09-20_00-35-06.png" />
+    <Content Include="data\simulations\simulation_2024-09-20_00-38-25.png" />
+    <Content Include="data\simulations\simulation_2024-09-20_00-42-07.png" />
+    <Content Include="data\simulations\simulation_2024-09-20_00-42-41.png" />
+    <Content Include="data\simulations\simulation_2024-09-20_00-43-21.png" />
+    <Content Include="data\simulations\simulation_2024-09-20_00-44-14.png" />
+    <Content Include="data\simulations\simulation_2024-09-20_00-47-10.png" />
+    <Content Include="data\simulations\simulation_2024-09-20_11-20-26.png" />
+    <Content Include="data\simulations\simulation_2024-09-20_11-21-54.png" />
+    <Content Include="data\simulations\simulation_2024-09-20_11-23-27.png" />
+    <Content Include="data\simulations\simulation_2024-09-30_17-50-05.png" />
+    <Content Include="data\simulations\simulation_2024-10-05_20-22-01.png" />
+    <Content Include="data\simulations\simulation_2024-10-10_22-20-23.png" />
+    <Content Include="data\simulations\simulation_2024-10-13_20-30-41.png" />
+    <Content Include="data\simulations\simulation_2024-10-13_20-31-51.png" />
+    <Content Include="data\simulations\simulation_2024-10-13_20-32-39.png" />
+    <Content Include="data\simulations\simulation_2024-10-13_20-36-06.png" />
     <Content Include="data\simulations\__pycache__\sim_statistic.cpython-312.pyc" />
     <Content Include="Outdata.txt" />
     <Content Include="Диздок симуляции.txt" />
